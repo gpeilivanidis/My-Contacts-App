@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67fbfbee6d.js" crossorigin="anonymous"></script>
+    <title>My Contacts</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">My Contacts</a></h1>
+        <input type="search" placeholder="Search...">
+    </header>
+    <main>
+        <div id="top-bar">
+            <div id="delete-controls">
+                <input type="checkbox" id="select-all-checkbox">
+                <label for="select-all-checkbox" id="select-all">select all</label>
+                <span id="top-buttons">
+                    <button type="button" class="btn delete">delete</button>
+                    <button type="button" class="btn cancel">cancel</button>
+                </span>
+                <a href="./subpages/addContact.html" id="add-contact" class="btn"><i class="fas fa-plus"></i> add contact</a>
+            </div>
+        </div>
+        <div class="container">
+            <ul>
+                
+            </ul>
+        </div>
+        <span id="back-to-top"><a href="#top"><i class="fas fa-arrow-up"></i></a>   </span>
+        <footer></footer>
+    </main>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

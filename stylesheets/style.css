@@ -1,0 +1,349 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    list-style: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3rem;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: inherit;
+}
+header{
+    margin-bottom: 1em;
+    padding: 1em;
+    background: rgba(0, 174, 255, 0.883);
+    -webkit-box-shadow: 0 0 10px grey;
+            box-shadow: 0 0 10px grey;
+    color: white;
+}
+footer{
+    margin-top: 15vh;
+}
+h1{
+    font-size: 2.5rem;
+    padding: 0.5em;
+    margin: 0.5em;
+    display: inline;
+}
+i:active{
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
+}
+i.fa-edit{
+    position: absolute;
+    top: 20%;
+    padding: 0.3em;
+    left: 90%;
+    /* initial state is hidden */
+    display: none;
+}
+i.fa-trash-alt{
+    position: absolute;
+    top: 20%;
+    padding: 0.3em;
+    left: 95%;
+    /* initial state is hidden */
+    display: none;
+}
+ul.group-body a{
+    text-decoration: none;
+    color: black;
+}
+input[type="search"]{
+    padding: 0.5em;
+    margin: 0.5em;
+    max-width: 20%;
+    height: 2.6rem;
+    font-size: 1.3rem;
+    float: right;
+    -webkit-box-shadow: 0 0 10px rgb(85, 85, 228);
+            box-shadow: 0 0 10px rgb(85, 85, 228);
+    border-radius: 4px;
+}
+input[type="checkbox"], #select-all{
+    cursor: pointer;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.group-head{
+    padding: 0.3em;
+    margin: 0.3em;
+    border-bottom: 1px solid rgba(0, 174, 255, 0.883);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.group-head:hover{
+    border-bottom: 3px solid rgba(0, 174, 255, 0.883);
+}
+.group-head span{
+    font-size: inherit;
+    margin: 0 0.5em;
+    padding: 0 0.5em;
+}
+.group-body-li{
+    padding: 0.5em 1.5em;
+    position: relative;
+    margin: 0 auto;
+    width :90%;
+}
+.group-body-li:hover{
+    -webkit-box-shadow: 0 0 4px 0 rgb(0, 146, 214);
+            box-shadow: 0 0 4px 0 rgb(0, 146, 214);
+    border-radius: 4px;
+}
+.head-checkbox{
+    width: 1.75rem;
+    height: 1.75rem;
+    position: absolute;
+    top: 32%;
+    left: 0%;
+    /* initial state is hidden */
+    display: none;
+}
+.body-checkbox{
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    /* initial state is hidden */
+    display: none;
+}
+#top-bar{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+#select-all-checkbox{
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: 0 0.5em;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    /* initial state is hidden */
+    display: none;
+}
+#select-all{
+    font-size: 1.3rem;
+    margin: 0.3em;
+    margin-left: 3em;
+    /* initial state is hidden */
+    display: none;
+}
+#top-buttons{
+    margin: 0 0.5em;
+    padding: 0 0.5em;
+    /* initial state is hidden */
+    display: none;
+}
+#delete-controls{
+    margin: 0.5em;
+    padding: 0.5em;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+#main-nav{
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+#main-nav li{
+    float: left;
+    padding: 0.1em;
+    margin: 0.1em;
+}
+.btn{
+    font-size: 1.3rem;
+    padding: 0.2em 0.5em;
+    margin: 0.1em;
+    background: rgba(0, 174, 255, 0.883);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.btn:active{
+    -webkit-transform: scale(.98);
+        -ms-transform: scale(.98);
+            transform: scale(.98);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 174, 255, 0.883);
+            box-shadow: 0 0 5px 0 rgba(0, 174, 255, 0.883);
+}
+.delete{
+    background: rgb(202, 0, 0);
+    font-weight: bold;
+}
+.delete:active{
+    -webkit-box-shadow: 0 0 5px 0 rgb(202, 0, 0);
+            box-shadow: 0 0 5px 0 rgb(202, 0, 0);
+}
+.cancel{
+    background: rgba(128, 128, 128, 0.712);
+    font-weight: bold;
+}
+.cancel:active{
+    -webkit-box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.712);
+            box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.712);
+
+}
+#add-contact{
+    text-decoration: none;
+    position: absolute;
+    right: 9%;
+    top: 16%;
+}
+#back-to-top{
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+}
+#back-to-top i{
+    font-size: 1.8rem;
+    padding: 0.5em;
+}
+#back-to-top a{
+    text-decoration: none;
+    color: black;
+}
+form{
+    background-color: rgba(0, 174, 255, 0.883);
+    border-radius: 4px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+}
+form label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+form input{
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.3rem;
+    -webkit-box-shadow: 0 0 10px rgb(85, 85, 228);
+            box-shadow: 0 0 10px rgb(85, 85, 228);
+    padding-left: 0.3em;
+}
+.form-input{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+#form-body{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+}
+#form-buttons{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+#form-submit{
+    background-color: rgb(85, 85, 228);
+    font-weight: bold;
+    color:white;
+}
+#form-reset{
+    background-color:   white;
+    -webkit-box-shadow: 0 0 10px 0 rgb(85, 85, 228);
+            box-shadow: 0 0 10px 0 rgb(85, 85, 228);
+
+    font-weight: bold;
+    color:black;
+}
+#form-reset:active{
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 174, 255, 0.883);
+            box-shadow: 0 0 10px 0 rgba(0, 174, 255, 0.883);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type="number"] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.success{
+    background-color: green;
+    color:white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0.2em;
+}
+.danger{
+    background-color: red;
+    color:white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0.2em;
+}
+.warning{
+    background-color: rgb(255, 217, 0);
+    color:white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0.2em;
+}
+#save-contact{
+    background-color: rgb(85, 85, 228);
+    font-weight: bold;
+    color:white;
+
+    display: none;
+}
+#cancel-edit{
+    background-color:   white;
+    -webkit-box-shadow: 0 0 10px 0 rgb(85, 85, 228);
+            box-shadow: 0 0 10px 0 rgb(85, 85, 228);
+    font-weight: bold;
+    color:black;
+    display: none;
+}

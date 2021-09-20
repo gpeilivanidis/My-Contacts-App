@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67fbfbee6d.js" crossorigin="anonymous"></script>
+    <title>My contacts | </title>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">My Contacts</a></h1>
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <div id="form-body">
+                    <div class="form-input">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname">
+                    </div>
+                    <div class="form-input">
+                        <label for="fname">Last name</label>
+                        <input type="text" id="lname">
+                    </div>
+                    <div class="form-input">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                </div>
+                <div id="form-buttons">
+                    <input type="submit" id="save-contact" class="btn" value="save contact">
+                    <input type="reset" id="cancel-edit" class="btn" value="cancel">
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../scripts/showContact.js"></script>
+</body>
+</html>
